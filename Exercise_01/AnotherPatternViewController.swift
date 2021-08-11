@@ -12,7 +12,7 @@ class AnotherPatternViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var resultLabel: UILabel!
     
     //TextFieldの数
-    private var requiredNumber = 5 //今回の課題の数
+    private var requiredNumber = 5 //今回の課題の数分
     private var textFields = [UITextField]()
     
     override func viewDidLoad() {
