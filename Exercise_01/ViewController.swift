@@ -14,7 +14,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var textField03: UITextField!
     @IBOutlet var textField04: UITextField!
     @IBOutlet var textField05: UITextField!
-    
     @IBOutlet var resultLabel: UILabel!
     
     override func viewDidLoad() {
@@ -23,9 +22,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         // Do any additional setup after loading the view.
     }
-    
-    
-    
     
     //MARK:Method
     
@@ -45,21 +41,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
     }
     
- 
-  
     private func delegate(){
         textField01.delegate = self
         textField02.delegate = self
         textField03.delegate = self
         textField04.delegate = self
         textField05.delegate = self
-        
-    }
-    private func datasource(){
-        
     }
     
     
+    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -67,6 +59,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     ///
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true)
+       
     }
 
 }
