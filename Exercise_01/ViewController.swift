@@ -19,23 +19,22 @@ class ViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate()
-        
         // Do any additional setup after loading the view.
     }
+    
+    
     
     //MARK:Method
     
     ///計算処理
-    ///
-    ///
     @IBAction func calculationButton(_ sender: Any) {
-        
+
         let val01 = Int(textField01.text!) ?? 0
         let val02 = Int(textField02.text!) ?? 0
         let val03 = Int(textField03.text!) ?? 0
         let val04 = Int(textField04.text!) ?? 0
         let val05 = Int(textField05.text!) ?? 0
-        
+
         let result = val01 + val02 + val03 + val04 + val05
         resultLabel.text = String(result)
         
@@ -49,9 +48,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
         textField05.delegate = self
     }
     
-    
-    
-
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -61,6 +57,5 @@ class ViewController: UIViewController,UITextFieldDelegate {
         textField.endEditing(true)
        
     }
-
 }
 

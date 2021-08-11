@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z6Y-9l-lBX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -127,6 +127,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </scene>
+        <!--Another Pattern View Controller-->
+        <scene sceneID="I9F-Fg-52Y">
+            <objects>
+                <viewController id="Z6Y-9l-lBX" customClass="AnotherPatternViewController" customModule="Exercise_01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T9u-fJ-gu9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-uM-Mqu">
+                                <rect key="frame" x="78" y="395.5" width="111" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="5sd-ls-xRj"/>
+                                    <constraint firstAttribute="width" constant="111" id="D6U-8d-4x7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="calculationButton:" destination="Z6Y-9l-lBX" eventType="touchUpInside" id="KUY-sS-Lo1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxW-nm-nmi">
+                                <rect key="frame" x="78" y="464" width="121" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="kio-G4-05y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HZa-7C-Hya"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uxW-nm-nmi" firstAttribute="top" secondItem="96Z-uM-Mqu" secondAttribute="bottom" constant="21.5" id="3Pi-mc-YRc"/>
+                            <constraint firstItem="96Z-uM-Mqu" firstAttribute="leading" secondItem="HZa-7C-Hya" secondAttribute="leading" constant="78" id="5fc-9R-Ue0"/>
+                            <constraint firstItem="HZa-7C-Hya" firstAttribute="bottom" secondItem="uxW-nm-nmi" secondAttribute="bottom" constant="355" id="BCz-qw-RFU"/>
+                            <constraint firstItem="HZa-7C-Hya" firstAttribute="trailing" secondItem="uxW-nm-nmi" secondAttribute="trailing" constant="215" id="Te0-yD-Ba3"/>
+                            <constraint firstItem="uxW-nm-nmi" firstAttribute="leading" secondItem="HZa-7C-Hya" secondAttribute="leading" constant="78" id="s01-zs-uly"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="uxW-nm-nmi" id="ZyZ-a8-ToZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTh-bY-86g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="129"/>
         </scene>
     </scenes>
 </document>
