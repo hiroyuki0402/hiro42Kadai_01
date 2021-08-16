@@ -24,9 +24,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     
     
-    //MARK:Method
+    // MARK:Method
     
-    ///計算処理
+    /// 計算処理
     @IBAction func calculationButton(_ sender: Any) {
 
         let val01 = Int(textField01.text!) ?? 0
@@ -49,13 +49,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
     
     ///
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true)
-       
     }
 }
 
